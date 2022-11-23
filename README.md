@@ -1,7 +1,9 @@
 # Symfony Docker
 
-Skelete Symfony full web app docker by Dunglas with Encore installed. 
+- Skelete Symfony full web app docker by Dunglas with Encore installed. 
+- Set up PHPStan, PHPUnit working for docker & phpstorm.
 
+---------------------------------------------------------
 ## Getting Started
 
 1. If not already done, [install Docker Compose](https://docs.docker.com/compose/install/) (v2.10+)
