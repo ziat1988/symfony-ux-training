@@ -1,0 +1,80 @@
+[
+  {
+    "FOOD NAME": "Angelica",
+    "SCIENTIFIC NAME": "Angelica keiskei",
+    "GROUP": "Herbs and Spices",
+    "SUB GROUP": "Herbs"
+  },
+  {
+    "FOOD NAME": "Savoy cabbage",
+    "SCIENTIFIC NAME": "Brassica oleracea var. sabauda",
+    "GROUP": "Vegetables",
+    "SUB GROUP": "Cabbages"
+  },
+  {
+    "FOOD NAME": "Silver linden",
+    "SCIENTIFIC NAME": "Tilia argentea",
+    "GROUP": "Herbs and Spices",
+    "SUB GROUP": "Herbs"
+  },
+  {
+    "FOOD NAME": "Kiwi",
+    "SCIENTIFIC NAME": "Actinidia chinensis",
+    "GROUP": "Fruits",
+    "SUB GROUP": "Tropical fruits"
+  },
+  {
+    "FOOD NAME": "Allium (Onion)",
+    "SCIENTIFIC NAME": "Allium",
+    "GROUP": "Vegetables",
+    "SUB GROUP": "Onion-family vegetables"
+  },
+  {
+    "FOOD NAME": "Garden onion",
+    "SCIENTIFIC NAME": "Allium cepa",
+    "GROUP": "Vegetables",
+    "SUB GROUP": "Onion-family vegetables"
+  },
+  {
+    "FOOD NAME": "Leek",
+    "SCIENTIFIC NAME": "Allium porrum",
+    "GROUP": "Vegetables",
+    "SUB GROUP": "Onion-family vegetables"
+  },
+  {
+    "FOOD NAME": "Garlic",
+    "SCIENTIFIC NAME": "Allium sativum",
+    "GROUP": "Herbs and Spices",
+    "SUB GROUP": "Herbs"
+  },
+  {
+    "FOOD NAME": "Chives",
+    "SCIENTIFIC NAME": "Allium schoenoprasum",
+    "GROUP": "Herbs and Spices",
+    "SUB GROUP": "Herbs"
+  },
+  {
+    "FOOD NAME": "Lemon verbena",
+    "SCIENTIFIC NAME": "Aloysia triphylla",
+    "GROUP": "Herbs and Spices",
+    "SUB GROUP": "Herbs"
+  },
+  {
+    "FOOD NAME": "Cashew nut",
+    "SCIENTIFIC NAME": "Anacardium occidentale",
+    "GROUP": "Nuts",
+    "SUB GROUP": "Nuts"
+  },
+  {
+    "FOOD NAME": "Pineapple",
+    "SCIENTIFIC NAME": "Ananas comosus",
+    "GROUP": "Fruits",
+    "SUB GROUP": "Tropical fruits"
+  },
+  {
+    "FOOD NAME": "Dill",
+    "SCIENTIFIC NAME": "Anethum graveolens",
+    "GROUP": "Herbs and Spices",
+    "SUB GROUP": "Herbs"
+  }
+]
