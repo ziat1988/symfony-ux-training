@@ -1,54 +1,40 @@
-<?php declare(strict_types=1);
+<?php
+declare(strict_types=1);
+namespace App\Tests;
+use App\Import\ImportCSV;
+use App\Import\ImportService;
+use Exception;
+use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
-use JetBrains\PhpStorm\NoReturn;
-
-class ImportTest extends \PHPUnit\Framework\TestCase
+class ImportTest extends KernelTestCase
 {
 
     /**
      * @dataProvider provideUri
-     * @param string $uri
+     * @param string $path
      * @return void
+     * @throws Exception
      */
-    public function testImport(string $uri):void
+    public function testImport(string $path):void
     {
-        dump($uri);
+
+        self::bootKernel();
+        $container = static::getContainer();
+
+        /** @var ImportCSV $importService */
+        $importService = $container->get(ImportCSV::class);
+        $importService->processImport($path);
+
         $this->assertSame(2,2,'same');
     }
 
 
-    public function provideUri(): Generator
+    public function provideUri(): \Generator
     {
         yield 'csv' => [__DIR__.'/Fixtures/food.csv'];
-        yield 'json' => [__DIR__.'/Fixtures/users.json'];
+        yield 'json' => [__DIR__.'/Fixtures/food.json'];
     }
 
 
 
-    /**
-     * @dataProvider provideTrimData
-     */
-    public function testTrim($expectedResult, $input): void
-    {
-        dump($expectedResult);
-        dump($input);
-        self::assertSame($expectedResult, trim($input));
-    }
-
-    /**
-     * @return string[][]
-     */
-    public function provideTrimData(): array
-    {
-        return [
-            [
-                'Hello World',
-                ' Hello World',
-            ],
-            [
-                'Hello World',
-                " Hello World \n",
-            ],
-        ];
-    }
 }
