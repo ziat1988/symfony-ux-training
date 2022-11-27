@@ -22,3 +22,11 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    _instanceof:
+        App\Import\ImportStrategyInterface:
+            tags: [ 'app.import_file' ]
+            
+    App\Import\ImportsHandler:
+        arguments:
+            - !tagged_iterator app.import_file

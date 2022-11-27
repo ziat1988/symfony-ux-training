@@ -1,7 +1,13 @@
 <?php
 namespace App\Import;
+use App\Entity\Food;
 
 interface ImportStrategyInterface
 {
-    public function processImport(string $path):void;
+    /**
+     * @param string $path
+     * @return array<array-key,Food>
+     */
+    public function processImport(string $path): array;
+    public function supports(string $path):bool;
 }

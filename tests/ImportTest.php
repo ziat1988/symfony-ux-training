@@ -3,6 +3,7 @@ declare(strict_types=1);
 namespace App\Tests;
 use App\Import\ImportCSV;
 use App\Import\ImportService;
+use App\Import\ImportsHandler;
 use Exception;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
@@ -17,14 +18,14 @@ class ImportTest extends KernelTestCase
      */
     public function testImport(string $path):void
     {
-
         self::bootKernel();
         $container = static::getContainer();
 
-        /** @var ImportCSV $importService */
-        $importService = $container->get(ImportCSV::class);
-        $importService->processImport($path);
+        /** @var ImportsHandler $importHanlder */
+        $importHanlder = $container->get(ImportsHandler::class);
+        $res = $importHanlder->execute($path);
 
+        dump($res);
         $this->assertSame(2,2,'same');
     }
 

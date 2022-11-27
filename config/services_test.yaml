@@ -1,3 +1,5 @@
 services:
-    App\Import\ImportCSV:
+    App\Import\ImportsHandler:
         public: true
+        arguments:
+            - !tagged_iterator app.import_file
