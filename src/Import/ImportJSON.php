@@ -6,13 +6,13 @@ use App\Entity\Food;
 
 class ImportJSON implements ImportStrategyInterface
 {
-    public function processImport(string $path): array
+    /**
+     * @param string $path
+     * @return bool
+     */
+    public function processImport(string $path):bool
     {
-        $food = new Food();
-        $food->setName('food1');
-        $food->setGroupPrimary('abc');
-        $food->setScientificName('science');
-        return [$food];
+        return false;
     }
 
     public function supports(string $path): bool

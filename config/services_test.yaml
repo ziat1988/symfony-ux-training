@@ -3,3 +3,11 @@ services:
         public: true
         arguments:
             - !tagged_iterator app.import_file
+        
+    App\Import\Food\ImportFoodCSV:
+        public: true
+        autowire: true
+           
+    App\Import\FirstNameStat\ImportFirstNameStatCSV:
+        public: true
+        autowire: true

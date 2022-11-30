@@ -15,9 +15,9 @@ class ImportsHandler
 
     /**
      * @param string $path
-     * @return array<array-key,Food>
+     * @return bool
      */
-    public function execute(string $path) : array
+    public function execute(string $path) : bool
     {
         foreach ($this->importsHandler as $importHandler){
             if($importHandler->supports($path)){
@@ -25,6 +25,6 @@ class ImportsHandler
             }
         }
 
-        throw new \RuntimeException('no service import for path');
+        throw new \RuntimeException('no service import implement');
     }
 }

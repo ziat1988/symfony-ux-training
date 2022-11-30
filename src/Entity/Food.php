@@ -22,6 +22,11 @@ class Food
     #[ORM\Column(length: 255)]
     private ?string $groupPrimary = null;
 
+    public function __construct(string $name, string $scientificName, string $groupPrimary){
+        $this->name = $name;
+        $this->scientificName= $scientificName;
+        $this->groupPrimary = $groupPrimary;
+    }
     public function getId(): ?int
     {
         return $this->id;
