@@ -9,13 +9,16 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <img
+        src="{{ data_uri_thumbnail('images/test-photo.jpg', 100, 75) }}"
+        {{ stimulus_controller('symfony/ux-lazy-image/lazy-image', {
+            src: asset('images/test-photo.jpg')
+        }) }}
 
-    This friendly message is coming from:
-    {{ dump(a) }}
-    <ul>
-        <li>Your controller at <code><a href="{{ '/srv/app/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/srv/app/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
+        alt="A blurhash image that is replaced by the real image on load"
+        width="200"
+        height="150"
+    >
+
 </div>
 {% endblock %}

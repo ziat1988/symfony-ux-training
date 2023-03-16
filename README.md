@@ -1,6 +1,7 @@
 # Symfony Docker
 
-Skelete Symfony full web app docker by Dunglas with Encore installed. 
+-   Skelete Symfony full web app docker by Dunglas with Encore installed.
+-   Test ux-lazy-image (Symfony Ux component)
 
 ## Getting Started
 
@@ -12,15 +13,15 @@ Skelete Symfony full web app docker by Dunglas with Encore installed.
 
 ## Features
 
-* Production, development and CI ready
-* [Installation of extra Docker Compose services](docs/extra-services.md) with Symfony Flex
-* Automatic HTTPS (in dev and in prod!)
-* HTTP/2, HTTP/3 and [Preload](https://symfony.com/doc/current/web_link.html) support
-* Built-in [Mercure](https://symfony.com/doc/current/mercure.html) hub
-* [Vulcain](https://vulcain.rocks) support
-* Native [XDebug](docs/xdebug.md) integration
-* Just 2 services (PHP FPM and Caddy server)
-* Super-readable configuration
+-   Production, development and CI ready
+-   [Installation of extra Docker Compose services](docs/extra-services.md) with Symfony Flex
+-   Automatic HTTPS (in dev and in prod!)
+-   HTTP/2, HTTP/3 and [Preload](https://symfony.com/doc/current/web_link.html) support
+-   Built-in [Mercure](https://symfony.com/doc/current/mercure.html) hub
+-   [Vulcain](https://vulcain.rocks) support
+-   Native [XDebug](docs/xdebug.md) integration
+-   Just 2 services (PHP FPM and Caddy server)
+-   Super-readable configuration
 
 **Enjoy!**
 
