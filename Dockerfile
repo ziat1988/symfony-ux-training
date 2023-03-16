@@ -34,6 +34,9 @@ RUN apk add --no-cache \
 	file \
 	gettext \
 	git \
+	libpng-dev libwebp-dev libjpeg-turbo-dev freetype-dev && \
+	docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg --with-webp && \
+	docker-php-ext-install gd \
 	;
 
 RUN set -eux; \
@@ -43,7 +46,6 @@ RUN set -eux; \
 	apcu \
 	opcache \
 	;
-RUN docker-php-ext-install gd
 
 ###> recipes ###
 ###> doctrine/doctrine-bundle ###
